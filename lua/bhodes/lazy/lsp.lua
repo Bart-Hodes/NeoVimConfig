@@ -17,6 +17,7 @@ return {
     config = function()
         require("conform").setup({
             formatters_by_ft = {
+                python = { "isort", "black" },
             }
         })
         local cmp = require('cmp')
@@ -30,7 +31,7 @@ return {
         require("fidget").setup({})
         require("mason").setup()
         require("mason-lspconfig").setup({
-            ensure_installed = {
+            ensure_installed = {"basedpyright"
             },
             handlers = {
                 function(server_name) -- default handler (optional)
