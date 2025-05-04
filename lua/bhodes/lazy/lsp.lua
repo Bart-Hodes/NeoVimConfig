@@ -31,7 +31,7 @@ return {
         require("fidget").setup({})
         require("mason").setup()
         require("mason-lspconfig").setup({
-            ensure_installed = {"basedpyright"
+            ensure_installed = {
             },
             handlers = {
                 function(server_name) -- default handler (optional)
@@ -109,3 +109,4 @@ return {
         })
     end
 }
+
